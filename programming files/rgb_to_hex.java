@@ -1,13 +1,19 @@
 public class rgb_to_hex {
     public static void main(String[] args) {
+        //Setting initial color values
         int r = 255;
         int g = 127;
         int b = 0;
+        
+        //Using rgbToHex, display the color values in hexadecimal format
         String hexColor = rgbToHex(r, g, b);
+        
+        //Output to user
         System.out.println("RGB color (" + r + ", " + g + ", " + b + ") = " + hexColor);
     }
 
     public static String rgbToHex(int r, int g, int b) {
+        //Converting each color int to hexadecimal values
         r = Math.min(255, Math.max(0, r));
         g = Math.min(255, Math.max(0, g));
         b = Math.min(255, Math.max(0, b));
